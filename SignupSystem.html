@@ -1,0 +1,236 @@
+<!--<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    include 'partials/_DBconnect.php';
+
+    $firstname = $_POST["firstname"];
+    $lastname = $_POST["lastname"];
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+   
+    //check whether thish username exist
+
+    $sql = "INSERT INTO `signup` (`first name`, `last name`, `email`, `password`)
+         VALUES ('$firstname','$lastname','$email','$password');";
+
+    $result = mysqli_query($conn, $sql);
+
+    session_start();
+    $_SESSION['Signup']=true;
+    $_SESSION['firstname']=$firstname;
+    header("location:PersonalProfile2.php");
+}
+
+?>
+
+-->
+
+<!----
+        Other files to connect database and login system
+        WEB devlopment\SignupSystem.php
+        WEB devlopment\LoginSystem.php
+        WEB devlopment\partials\_DBconnect.php
+        WEB devlopment\personalprofile.html
+        WEB devlopment\PersonalProfile2.php
+    -->
+
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <title>Signup page</title>
+    <style>
+        div {
+            background:transparent;
+            width: 250px;
+            border: 2px black;
+            padding: 20px;
+            margin: auto;
+            text-align: center;
+        }
+
+       
+
+        body {
+            background-image: url(https://images.pexels.com/photos/46253/mt-fuji-sea-of-clouds-sunrise-46253.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background-size:1555px 1000px;
+            background-repeat: no-repeat;
+            position: center;
+            height: 100px;
+        }
+
+        div {
+            height: 450PX;
+            width: 300PX;
+            border: solid white;
+            margin: auto;
+        }
+
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        button {
+            color: blue;
+            background:transparent;
+        
+        }
+        input{
+            background:transparent;
+            color:white;
+        }
+
+        .btn {
+            cursor: pointer;
+            border: 1px solid #3498db;
+            background-color: transparent;
+            height: 30px;
+            width: 80px;
+            color: #3498db;
+            font-size: 1.5em;
+            box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+        }
+
+        h1,
+        h3 {
+            text-align: center;
+            color:white;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+
+
+        a {
+            color:white;
+            font-size: 90%;
+        }
+
+        hr {
+            height: 1px;
+            border-width: 0;
+            
+            background-color:black;
+        }
+        header {
+            background:transparent;
+            padding: 10px;
+            text-align: center;
+            font-size: 35px;
+            height: 200px;
+            width:100%;
+            color:blanchedalmond;
+        }
+        footer {
+            
+            background:transparent;
+            box-shadow: 0 -2px 4px 0 rgb(0 0 0 / 5%);
+            padding: 10px;
+            text-align: center;
+            color:cornsilk;
+        }
+        label{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Ganesh suryawanshi</h2>
+        <a href="http://localhost/My%20Web/portfolio.html" class="w3-bar-item w3-button">Home</a>
+        <a href="" class="w3-bar-item w3-button">About</a>
+        <a href="" class="w3-bar-item w3-button">Contact</a>
+        <a href="http://localhost/My%20Web/SignupSystem.html" class="w3-bar-item w3-button">Signup</a>
+        <a href="http://localhost/My%20Web/LoginSystem.html" class="w3-bar-item w3-button">Login</a>
+        
+
+    </header>
+   
+    <div>
+        <form action="portfolio.html" method="post">
+            <i class="fa fa-facebook-official" style="font-size:48px;color:blue"></i>
+            <i class="fa fa-google-plus-circle" style="font-size:48px;color:red"></i>
+
+            <i class="fa fa-instagram" style="font-size:48px;color:red"></i>
+            <br>
+            <hr>
+
+            <label typeof="text"></label>
+            <input type="text" id="firstname" name="firstname" placeholder="FirstName" value="" required><br><br>
+
+            <label for="text"></label>
+            <input type="text" id="lastname" name="lastname" placeholder="LastName" value=""required><br><br>
+
+            <label for="text"></label>
+            <input type="text" id="email" name="email" placeholder="xyz@gmail.com" value=""required><br><br>
+
+            <label for="password"></label>
+            <input type="password" id="password" name="password" placeholder="password" value=""required><br><br>
+           
+
+             
+            <label for="gender">gender</label><br>
+            <input type="radio" id="male" name="gender" value="Male"required>
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender" value="Female"required>
+            <label for="Female">Female</label><br>
+
+            
+            <input type="checkbox" name="agree" value="Terms and conditions"required>
+
+            <label>Terms and conditions</label><br>
+
+            <button action="" type="submit">submit</button>
+        </form>
+    </div>
+    <footer>
+        <h3>
+            This is personal webpage devloped by<br />
+            <u>Ganesh santosh suryawanshi</u><br />
+            it is personal blog (resume).
+        </h3>
+        <br />
+        <h3>
+            Feedback:<a href="mailto">ganeshsuryawanshi594@gmail.com</a>
+        </h3>
+        <br />
+        <a href="https://www.facebook.com">
+            <iclass="fa fa-facebook-official"style="font-size: 40px; color: blue" align="botom"></i>
+        </a>
+        <a href="https://www.instagram.com/accounts/login/">
+            <i class="fa fa-instagram" style="font-size: 40px; color: red"></i></a>
+        <a href="https://twitter.com/"><i class="fa fa-twitter" style="font-size: 40px; color: aqua"></i></a>
+
+        <a href="https://www.youtube.com/"><i class="fa fa-youtube-play" style="font-size: 40px; color: red"></i></a>
+
+        <a href="#">
+            <i class="fa fa-linkedin" style="font-size: 40px; color: rgb(76, 76, 238)"></i>
+        </a>
+        <br />
+
+    </footer>
+
+</body>
+
+</html>
