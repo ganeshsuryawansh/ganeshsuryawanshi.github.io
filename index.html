@@ -10,12 +10,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Caveat&family=Courgette&family=Lobster&family=Poppins&family=Ubuntu:wght@300&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <style>
         * {
             box-sizing: border-box;
@@ -23,9 +25,12 @@
             padding: 0px;
         }
 
+
+
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+        
 
         /* Style the header */
         header {
@@ -46,11 +51,11 @@
         }*/
 
 
-        div {
+        .main{
             /*float: left;*/
             /*padding: 20px;*/
             width: 100%;
-            height: 700px;
+            height:1400px;
             /*background-image: url(https://think360studio-media.s3.ap-south-1.amazonaws.com/download/india-flag-2021-wallpaper-1.png);
             */
             background-color: thistle;
@@ -76,6 +81,7 @@
             box-shadow: 0px 0px 10000000000px blue;
 
         }
+       
 
         /* Clear floats after the columns */
 
@@ -126,14 +132,23 @@
             animation-name: ganesh;
             /*animation-name: harry2;*/
             animation-duration: 3s;
-            animation-iteration-count: infinite;
+            animation-iteration-count:infinite;
             animation-fill-mode: alternate;
             animation-timing-function: ease-in-out;
             animation-delay: 1s;
             
             font-family: 'Courgette', cursive;
         }
-
+        .wellcome{
+            display:flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding-left: 80px;
+            position:absolute;
+            font-family: 'Courgette', cursive;
+          
+        }
         @keyframes ganesh {
             from {
                 width: 200px;
@@ -151,6 +166,14 @@
             background: transparent;
             box-shadow: 0px 0px 1000px rgb(25, 0, 255);
         }
+        .mySlides{
+            width: 100%;
+            height:450px;
+        }
+        #myslides{
+            align-items: center;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -167,38 +190,73 @@
     </header>
 
     <div class="container">
-        <h1>wellcome</h1>
-
+        <h1 class="wellcome">wellcome</h1>
     </div>
 
     <section>
-        <!--<nav>
-            <h2>Skill</h2>
-            <ul>
-                <li>C progamming</li>
-                <li>php</li>
-                <li>javascript</li>
-                <li>html</li>
-                <li>css</li>
-                <li>sql</li>
-                <li>DSA</li>
-                <li>SDLC</li>
-            </ul>
-            <hr />
-            <h2>Contact</h2>
-            <p>Mail:ganeshsuryawanshi594@gmail.com</p>
-            <p>Phone:7278463131/9309580827</p>
-        </nav>
-    -->
-
-        <div>
+        <div class="main">
             <img src="ganesh surya photo.jpg" position="left" alt="ganesh suryawanshi" /><br><br>
 
             <h1><i>Ganesh santosh suryawanshi</i></h1>
             <h4>BBA(COMPUTER APPLICATION )</h4>
             <h4><a href="http://dpcollege.in/">Dada patil college karjat</a></h4>
+            <hr>
+            <div class="w3-container">
+                <h2>Certificate</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere id aliquam, qui amet, corrupti sequi,
+                     quae vitae obcaecati iste recusandae temporibus debitis! Nostrum nam accusamus error temporibus inventore nemo! Ducimus.</p>
+              </div>
 
+              <div class="w3-content w3-display-container"id="myslides" style="max-width:800px">
+                <img class="mySlides" src="Data sciense.jpg">
+                <img class="mySlides" src="C Programming.jpg">
+                <img class="mySlides" src="Mysql.jpg">
+                <img class="mySlides" src="ganesh surya 3.jpg" style="width: 70%;">
+                <img class="mySlides" src="ganesh surya 4.jpg" style="width: 70%; ">
+                
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                  
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                  <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)">.</span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)">.</span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)">.</span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)">.</span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)">.</span>
+                
+                </div>
+              </div>
         </div>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function currentDiv(n) {
+              showDivs(slideIndex = n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+              }
+              x[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " w3-white";
+            }
+            </script>
+
+        
     </section>
 
     <footer>
@@ -209,7 +267,7 @@
         </h3>
         <br />
         <h3>
-            Feedback: <a href="mailto" :ganeshsuryawanshi594@gmail.com>ganeshsuryawanshi594@gmail.com</a>
+            Feedback: <a href="mailto:ganeshsuryawanshi594@gmail.com">ganeshsuryawanshi594@gmail.com</a>
         </h3>
         <br />
         <a href="https://www.facebook.com">
@@ -239,7 +297,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
+    </script>
 </body>
 
 </html>
