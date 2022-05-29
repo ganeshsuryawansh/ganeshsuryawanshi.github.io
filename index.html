@@ -21,6 +21,12 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="shortcut icon" href="ganesh surya photo.jpg" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css" rel="stylesheet" />
     <style>
         * {
             box-sizing: border-box;
@@ -28,24 +34,15 @@
             padding: 0px;
         }
 
-
-
         body {
             font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            background-color: #E3F2FD;
         }
-
 
         /* Style the header */
         header {
-            /*background-image: url(https://image.shutterstock.com/image-illustration/indian-flag-gradient-blurred-background-260nw-1954498630.jpg);
-            background-size: cover;
-            background-size: 1200px 110%;
-            padding: 30px;
-            */
-            background: #17e0d0;
-            background-image: linear-gradient(to right, rgb(0, 255, 234) 0, rgba(38, 64, 255, 0.96) 100%);
-            font-family: sans-serif;
-
+            background-color: #E3F2FD;
             text-align: center;
             font-size: 35px;
             color: black;
@@ -55,58 +52,19 @@
             font-size: 20px;
         }
 
-        /* Style the list inside the menu */
-        /* nav ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-        }*/
-
-
         .main {
             /*float: left;*/
             /*padding: 20px;*/
             width: 100%;
-            height: 1600px;
+            height: 600px;
             /*background-image: url(https://think360studio-media.s3.ap-south-1.amazonaws.com/download/india-flag-2021-wallpaper-1.png);
             */
-            background-color: rgb(234, 255, 0);
-            background-repeat: no-repeat;
-            background-size: cover;
-            justify-content: center;
-            align-items: center;
+            background-color:#E3F2FD;
+            display:flex;
+            /*justify-content: center;
+            align-items: center;*/
             text-align: center;
             /* only for demonstration, should be removed */
-        }
-
-        .myimg {
-            height: 400px;
-            width: 250px;
-            margin-top: 15px;
-            flex-shrink: 15;
-            /*position: relative;
-            top: 20px;
-            left: 0px;*/
-            cursor: pointer;
-            border: 4px solid black;
-            border-radius: 40px 40px;
-            box-shadow: 0px 0px 10000000000px red;
-
-        }
-
-
-        /* Clear floats after the columns */
-
-        /* Style the footer */
-        footer {
-
-            /*background-color: #26538d;*/
-            background: #17e0d0;
-            background-image: linear-gradient(to right, rgb(0, 255, 255) 0, rgba(0, 30, 255, 0.96) 100%);
-
-            padding: 10px;
-            text-align: center;
-            color: rgb(255, 255, 255);
         }
 
         /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
@@ -119,89 +77,29 @@
             }
         }
 
-
-
         i:hover {
-            color: #ff0000;
+            color: black;
             cursor: pointer;
 
-        }
-
-        .container {
-            display: flex;
-            height: 100px;
-            width: 100%;
-            /*background: rgb(8, 250, 210);*/
-
-            background: #00ffea;
-            background-image: repeating-linear-gradient(to right, rgb(0, 255, 255) 0, rgb(255, 0, 255) 100%);
-
-            width: 100%;
-            height: 50px;
-
-            position: relative;
-            text-align: center;
-
-            border: 2px solid red;
-            border-radius: 1em;
-
-            
-            /*Animation*/
-            animation-name: ganesh;
-            /*animation-name: harry2;*/
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
-            animation-fill-mode: alternate;
-            animation-timing-function: ease-in-out;
-            animation-delay: 1s;
-
-            font-family: 'Courgette', cursive;
-            overflow: hidden;
-        }
-
-        .wellcome {
-            display: flex;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            padding-left: 80px;
-            position: absolute;
-            font-family: 'Courgette', cursive;
-            overflow: hidden;
-        }
-
-        @keyframes ganesh {
-            from {
-                width: 200px;
-            }
-
-            to {
-                width: 100%;
-            }
         }
 
         @media only screen and (min-width:300px) and (max-width:500px) {
 
             .main {
-                background: #00ffea;
-                background-image: repeating-linear-gradient(to right, rgb(0, 255, 76) 0, rgb(255, 238, 0) 100%);
-                width: 100%;
-                height: 1000px;
-            }
 
+                background-color: #E3F2FD;
+                width: 100%;
+                height: 700px;
+            }
+            .d-block{
+                height: 400px;
+                width: 90%;
+                flex-shrink: 15;
+            }
             .myimg {
                 box-shadow: none;
             }
         }
-
-        .button {
-            font-size: 20px;
-            padding: 5px;
-            border-radius: 10px;
-            background: transparent;
-            /*box-shadow: 0px 0px 1000px rgb(255, 255, 255);*/
-        }
-
 
         #carouselExampleCaptions {
 
@@ -224,94 +122,219 @@
         @media only screen and (min-width:1245px)and(max-width:1500px) {
             .carousel slide {
                 overflow: hidden;
+                height: ;
             }
+
         }
 
-        .d-block w-100 {
-            height: auto;
-            width: 80%;
+        
+
+        .footer {
+            height: 150px;
+            width: 100%;
+    
+        }
+        .fab{
+            font-size: 30px;
+        }
+        .navbar-toggler{
+            font-size: 30px;
+            margin-top:0px;
+        }
+        .d-flex{
+            margin-left: 220px;
+        }
+        .left{
+            height: 550px;
+            width: 50%;
+            color: black;
+        }
+        .right{
+            height: 550px;
+            width: 50%;
+            color: black;
+            text-align: center;
+            display:flex;
+            /*justify-content: center;*/
+            /*align-items: center;*/
+        }
+
+        .myimg {
+            height: 400px;
+            width: 250px;
+            margin-top: 15px;
+            flex-shrink: 15;
+            /*position: relative;
+            top: 20px;
+            left: 0px;*/
+            cursor: pointer;
+            border: 4px solid black;
+            border-radius: 40px 40px;
+            /*box-shadow: 0px 0px 10000000000px red;*/
+        }
+        .right-1{
+            margin-top: 50px;
+        }
+        .right-2{
+            /*margin= top,right,bottom,left*/
+            /*padding= top, right,bottom,left*/
+            margin:50px;
+        }
+
+        .sub-hedings{
+           
+            border: 1px solid black;
+            height: fit-content;
+            width:fit-content;
+        }
+        .w3-container{
+            text-align: center;
+        }
+        .carousel-item{
+           
+        }
+        .d-block{
+            height: 650px;
+            width: 60%;
             flex-shrink: 15;
             overflow: hidden;
         }
+        /****************************/
+        .div {
+            display: flex;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: conic-gradient(rgb(13, 33, 255) var(--progress), rgb(255, 251, 251) 0deg);
+            font-size: 0;
+            }
 
-        /*#myslides {
-            align-items: center;
-            cursor: pointer;
-        }*/
+            .div::after {
+            content: attr(data-progress) '%';
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            margin: 5px;
+            border-radius: 50%;
+            background: rgb(249, 218, 218);
+            font-size:17px;
+            text-align: center;
+            }
 
-        .foot-link:hover {
-            color: yellow;
-        }
+            .skill{
+                height:0px;
+                width: 50px;
+            }
 
-        .foot-link {
-            color: white;
-        }
+        
     </style>
 </head>
 
-<body>
+<body> 
 
 
     <header>
-        <h1><i>Ganesh suryawanshi.in</i></h1>
-               
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="/ganeshsuryawanshi.github.io/index.html"><h1><i>Ganesh suryawanshi.in</i></h1> </a>
+        
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Container wrapper -->
             <div class="container-fluid">
-                <a class="navbar-brand" href="/ganeshsuryawanshi.github.io/index.html">Ganesh suryawanshi</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
-                                href="/ganeshsuryawanshi.github.io/index.html">Home</a>
-                        </li>
+
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Navbar brand -->
+                    <!--<a class="navbar-brand mt-2 mt-lg-0" href="#">
+                        <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" height="15"
+                            alt="MDB Logo" loading="lazy" />
+                    </a>-->
+                    <!-- Left links -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="tel:9309580827">Callme</a>
                         </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="/ganeshsuryawanshi.github.io/Signup.html">Signup</a>
-                        </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="#">Projects</a>
-                        </li>
-
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/ganeshsuryawanshi.github.io/About.html">About</a>
                         </li>
-
                     </ul>
+                    <!-- Left links -->
                 </div>
+                <!-- Collapsible wrapper -->
+
+                <!-- Right elements -->
+                <div class="d-flex align-items-center">
+                    
+                    <!-- Avatar -->
+                    <div class="dropdown">
+                        <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
+                            id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="/ganeshsuryawanshi.github.io/avatar.png" class="rounded-circle"
+                                height="40" alt="Black and White Portrait of a Man" loading="lazy" />
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                            <li>
+                                <a class="dropdown-item" href="#">My profile</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Right elements -->
             </div>
+            <!-- Container wrapper -->
         </nav>
     </header>
-
-    <div class="container">
-        <h1 class="wellcome">wellcome.........</h1>
-    </div>
-
     <section>
         <div class="main">
+            <div class="left"> 
             <img class="myimg" src="ganesh surya photo.jpg" position="left" alt="ganesh suryawanshi" /><br><br>
-
             <h1><i>Ganesh santosh suryawanshi</i></h1>
             <h4>BBA(COMPUTER APPLICATION )</h4>
             <h4><a href="http://dpcollege.in/">Dada patil college karjat</a></h4>
-            <hr>
-            <div class="w3-container">
-                <h2>Certificate</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere id aliquam, qui amet, corrupti
-                    sequi,
-                    quae vitae obcaecati iste recusandae temporibus debitis! Nostrum nam accusamus error temporibus
-                    inventore nemo! Ducimus.</p>
             </div>
+            <div class="right">
+                <h3 class="sub-hedings">My Skills <img class="skill" src="/ganeshsuryawanshi.github.io/skill.png" alt=""></h3>
+                <div class="right-1">
+                <div class="div" data-progress="C++ 80" style="--progress: 300deg;">80%</div><br>
+                <div class="div" data-progress="PHP 90" style="--progress: 320deg;">90%</div><br>
+                <div class="div" data-progress="javascript 70" style="--progress: 280deg;">80%</div><br>
+                <div class="div" data-progress="HTML5 & CSS3 85" style="--progress: 310deg;">80%</div><br>
+                </div>
+                <div class="right-2">
+                 <div class="div" data-progress="SQL 80" style="--progress: 300deg;">80%</div><br>
+                 <div class="div" data-progress="JAVA 80" style="--progress: 300deg;">80%</div><br>
+                 <div class="div" data-progress="PYTHON 80" style="--progress: 300deg;">80%</div><br>
+                 <div class="div" data-progress="DBMS 90" style="--progress: 350deg;">90%</div><br>
 
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                </div>
+            </div>
+        </div> 
+        <br><hr>
+        <div class="w3-container">
+                <h2>Certificate</h2>
+                <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere id <br>aliquam, qui amet, corrupti
+                    sequi,
+                    quae vitae obcaecati iste <br> recusandae temporibus debitis! Nostrum nam accusamus error </br> temporibus
+                    inventore nemo! Ducimus.
+                </p>
+        </div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -376,46 +399,60 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </div>
-
-
-
     </section>
+    <br><hr>
 
-    <footer>
-        <h3>
-            This is personal webpage devloped by<br />
-            <u><i>Ganesh santosh suryawanshi</i></u><br />
-            it is personal blog (resume).
-        </h3>
-        <br />
-        <h3>
-            <a class="foot-link" href="tel:9309580827">Call me</a><br><br>
+    <footer class="footer">
 
-            Feedback: <a class="foot-link"
-                href="mailto:ganeshsuryawanshi594@gmail.com">ganeshsuryawanshi594@gmail.com</a>
-        </h3>
-        <br />
-        <a href="https://www.facebook.com">
-            <i class="fa fa-facebook-official" style="font-size: 40px; color: blue;"></i>
-        </a>
+        <footer class="text-center text-white" style="background-color: #f1f1f1;">
+            <!-- Grid container -->
+            <div class="container pt-4">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
 
-        <a href="https://www.instagram.com/accounts/login/">
-            <i class="fa fa-instagram" style="font-size: 40px; color: red;"></i>
-        </a>
+                    <!-- Twitter -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
 
-        <a href="https://twitter.com/">
-            <i class="fa fa-twitter" style="font-size: 40px; color: rgb(0, 255, 255);"></i>
-        </a>
+                    <!-- Google -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
 
-        <p>Copyright © 2022 Ganesh suryawanshi.in </p>
+                    <!-- Instagram -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
 
+                    <!-- Linkedin -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                    <!-- Github -->
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                        data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
 
+            <!-- Copyright -->
+            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2022 Copyright:
+                <a class="text-dark" href="/ganeshsuryawanshi.github.io/index.html">Ganeshsuryawanshi.in</a><br><br>
+                <p>Feedback: <a href="mailto:ganeshsuryawanshi594@gmail.com">ganeshsuryawanshi594@gmail.com</a></p>
+            </div>
+            <!-- Copyright -->
+        </footer>
     </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
         </script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"></script>
+
 </body>
 
 </html>
