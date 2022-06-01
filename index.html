@@ -5,7 +5,7 @@
     <title>Ganesh suryawanshi.in</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -37,12 +37,12 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             color: black;
-            background-color: #E3F2FD;
+            background-color: #93cffb;
         }
 
         /* Style the header */
         header {
-            background-color: #E3F2FD;
+            background-color: #93cffb;
             text-align: center;
             font-size: 35px;
             color: black;
@@ -53,18 +53,12 @@
         }
 
         .main {
-            /*float: left;*/
-            /*padding: 20px;*/
+            
             width: 100%;
             height: 600px;
-            /*background-image: url(https://think360studio-media.s3.ap-south-1.amazonaws.com/download/india-flag-2021-wallpaper-1.png);
-            */
-            background-color:#E3F2FD;
-            display:flex;
-            /*justify-content: center;
-            align-items: center;*/
+            background-color: #93cffb;
+            display: flex;
             text-align: center;
-            /* only for demonstration, should be removed */
         }
 
         /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
@@ -83,26 +77,37 @@
 
         }
 
-        @media only screen and (min-width:300px) and (max-width:500px) {
-
+        @media only screen and (min-width:400px) and (max-width:600px) {
             .main {
-
-                background-color: #E3F2FD;
+                background-color: #93cffb;
                 width: 100%;
                 height: 700px;
             }
-            .d-block{
+
+            .d-block {
                 height: 400px;
                 width: 90%;
                 flex-shrink: 15;
             }
-            .myimg {
-                box-shadow: none;
+        }
+
+        .carousel-item {
+            height: 400px;
+        }
+
+        @media screen and (min-device-width: 600px) and (max-device-width: 800px) {
+            #carouselExampleCaptions {
+                align-items: center;
+                cursor: pointer;
+                height: 400px;
+                ;
+                width: 100%;
+                flex-shrink: 15;
+
             }
         }
 
         #carouselExampleCaptions {
-
             align-items: center;
             cursor: pointer;
             margin: auto;
@@ -119,50 +124,56 @@
             opacity: 100;
         }
 
-        @media only screen and (min-width:1245px)and(max-width:1500px) {
-            .carousel slide {
-                overflow: hidden;
-                height: ;
-            }
+        .d-block {
+            height: 600px;
+            width: 80%;
+            flex-shrink: 15;
 
         }
 
-        
+        .carousel-item {
+            height: 600px;
+        }
 
         .footer {
             height: 150px;
             width: 100%;
-    
+
         }
-        .fab{
+
+        .fab {
             font-size: 30px;
         }
-        .navbar-toggler{
+
+        .navbar-toggler {
             font-size: 30px;
-            margin-top:0px;
+            margin-top: 0px;
         }
-        .d-flex{
+
+        .d-flex {
             margin-left: 220px;
         }
-        .left{
+
+        .left {
             height: 550px;
             width: 50%;
             color: black;
         }
-        .right{
+
+        .right {
             height: 550px;
             width: 50%;
             color: black;
             text-align: center;
-            display:flex;
+            display: flex;
             /*justify-content: center;*/
             /*align-items: center;*/
         }
 
         .myimg {
-            height: 400px;
+            height: 380px;
             width: 250px;
-            margin-top: 15px;
+            margin-top: 25px;
             flex-shrink: 15;
             /*position: relative;
             top: 20px;
@@ -172,44 +183,41 @@
             border-radius: 40px 40px;
             /*box-shadow: 0px 0px 10000000000px red;*/
         }
-        .right-1{
+
+        .right-1 {
             margin-top: 50px;
         }
-        .right-2{
+
+        .right-2 {
             /*margin= top,right,bottom,left*/
             /*padding= top, right,bottom,left*/
-            margin:50px;
+            margin: 50px;
         }
 
-        .sub-hedings{
-           
+        .sub-hedings {
+
             border: 1px solid black;
             height: fit-content;
-            width:fit-content;
+            width: fit-content;
         }
-        .w3-container{
+
+        .w3-container {
             text-align: center;
         }
-        .carousel-item{
-           
-        }
-        .d-block{
-            height: 650px;
-            width: 60%;
-            flex-shrink: 15;
-            overflow: hidden;
-        }
+
+
+
         /****************************/
         .div {
             display: flex;
             width: 100px;
             height: 100px;
             border-radius: 50%;
-            background: conic-gradient(rgb(13, 33, 255) var(--progress), rgb(255, 251, 251) 0deg);
+            background: conic-gradient(rgb(0, 98, 103) var(--progress), rgb(255, 255, 255) 0deg);
             font-size: 0;
-            }
+        }
 
-            .div::after {
+        .div::after {
             content: attr(data-progress) '%';
             display: flex;
             justify-content: center;
@@ -217,26 +225,26 @@
             width: 100%;
             margin: 5px;
             border-radius: 50%;
-            background: rgb(249, 218, 218);
-            font-size:17px;
+            background: rgb(225, 229, 143);
+            font-size: 17px;
             text-align: center;
-            }
+        }
 
-            .skill{
-                height:0px;
-                width: 50px;
-            }
-
-        
+        .skill {
+            height: 40px;
+            width: 40px;
+        }
     </style>
 </head>
 
-<body> 
+<body>
 
 
     <header>
-        <a href="/ganeshsuryawanshi.github.io/index.html"><h1><i>Ganesh suryawanshi.in</i></h1> </a>
-        
+        <a href="/ganeshsuryawanshi.github.io/index.html">
+            <h1><i>Ganesh suryawanshi.in</i></h1>
+        </a>
+
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <!-- Container wrapper -->
@@ -273,14 +281,14 @@
 
                 <!-- Right elements -->
                 <div class="d-flex align-items-center">
-                    
+
                     <!-- Avatar -->
                     <div class="dropdown">
                         <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
                             id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown"
                             aria-expanded="false">
-                            <img src="/ganeshsuryawanshi.github.io/avatar.png" class="rounded-circle"
-                                height="40" alt="Black and White Portrait of a Man" loading="lazy" />
+                            <img src="/ganeshsuryawanshi.github.io/avatar.png" class="rounded-circle" height="40"
+                                alt="Black and White Portrait of a Man" loading="lazy" />
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
                             <li>
@@ -302,149 +310,154 @@
     </header>
     <section>
         <div class="main">
-            <div class="left"> 
-            <img class="myimg" src="ganesh surya photo.jpg" position="left" alt="ganesh suryawanshi" /><br><br>
-            <h1><i>Ganesh santosh suryawanshi</i></h1>
-            <h4>BBA(COMPUTER APPLICATION )</h4>
-            <h4><a href="http://dpcollege.in/">Dada patil college karjat</a></h4>
+            <div class="left">
+                <img class="myimg" src="ganesh surya photo.jpg" position="left" alt="ganesh suryawanshi" /><br><br>
+                <h1><i>Ganesh santosh suryawanshi</i></h1>
+                <h4>BBA(COMPUTER APPLICATION )</h4>
+                <h4><a href="http://dpcollege.in/">Dada patil college karjat</a></h4>
             </div>
             <div class="right">
-                <h3 class="sub-hedings">My Skills <img class="skill" src="/ganeshsuryawanshi.github.io/skill.png" alt=""></h3>
+                
                 <div class="right-1">
-                <div class="div" data-progress="C++ 80" style="--progress: 300deg;">80%</div><br>
-                <div class="div" data-progress="PHP 90" style="--progress: 320deg;">90%</div><br>
-                <div class="div" data-progress="javascript 70" style="--progress: 280deg;">80%</div><br>
-                <div class="div" data-progress="HTML5 & CSS3 85" style="--progress: 310deg;">80%</div><br>
+                    <div class="div" data-progress="C++ 80" style="--progress: 300deg;">80%</div><br>
+                    <div class="div" data-progress="PHP 90" style="--progress: 320deg;">90%</div><br>
+                    <div class="div" data-progress="javascript 70" style="--progress: 280deg;">80%</div><br>
+                    <div class="div" data-progress="HTML5 & CSS3 85" style="--progress: 310deg;">80%</div><br>
                 </div>
+
+                <h3 class="sub-hedings">My Skills <img class="skill" src="/ganeshsuryawanshi.github.io/skill.png"
+                        alt=""></h3>
                 <div class="right-2">
-                 <div class="div" data-progress="SQL 80" style="--progress: 300deg;">80%</div><br>
-                 <div class="div" data-progress="JAVA 80" style="--progress: 300deg;">80%</div><br>
-                 <div class="div" data-progress="PYTHON 80" style="--progress: 300deg;">80%</div><br>
-                 <div class="div" data-progress="DBMS 90" style="--progress: 350deg;">90%</div><br>
+                    <div class="div" data-progress="SQL 80" style="--progress: 300deg;">80%</div><br>
+                    <div class="div" data-progress="JAVA 80" style="--progress: 300deg;">80%</div><br>
+                    <div class="div" data-progress="PYTHON 80" style="--progress: 300deg;">80%</div><br>
+                    <div class="div" data-progress="DBMS 90" style="--progress: 350deg;">90%</div><br>
 
                 </div>
             </div>
-        </div> 
-        <br><hr>
+        </div>
+        <br>
+        <hr>
         <div class="w3-container">
-                <h2>Certificate</h2>
-                <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere id <br>aliquam, qui amet, corrupti
-                    sequi,
-                    quae vitae obcaecati iste <br> recusandae temporibus debitis! Nostrum nam accusamus error </br> temporibus
-                    inventore nemo! Ducimus.
-                </p>
+            <h2>Certificate</h2>
+            <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere id <br>aliquam, qui amet, corrupti
+            sequi,
+            quae vitae obcaecati iste <br> recusandae temporibus debitis! Nostrum nam accusamus error </br> temporibus
+            inventore nemo! Ducimus.
+            </p>
         </div>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
 
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
 
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-                        aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
 
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
-                        aria-label="Slide 6"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="C Programming.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="Data sciense.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="Mysql.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="Screenshot (83).png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="Screenshot (84).png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="Screenshot (85).png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
             </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="C Programming.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Data sciense.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="Mysql.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="Screenshot (83).png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="Screenshot (84).png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="Screenshot (85).png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </section>
-    <br><hr>
+    <br>
+    <hr>
 
-    <footer class="footer">
 
-        <footer class="text-center text-white" style="background-color: #f1f1f1;">
-            <!-- Grid container -->
-            <div class="container pt-4">
-                <!-- Section: Social media -->
-                <section class="mb-4">
-                    <!-- Facebook -->
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                        data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
 
-                    <!-- Twitter -->
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                        data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
 
-                    <!-- Google -->
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                        data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+                <!-- Twitter -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
 
-                    <!-- Instagram -->
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                        data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+                <!-- Google -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
 
-                    <!-- Linkedin -->
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                        data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
-                    <!-- Github -->
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                        data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
-                </section>
-                <!-- Section: Social media -->
-            </div>
-            <!-- Grid container -->
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
 
-            <!-- Copyright -->
-            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                © 2022 Copyright:
-                <a class="text-dark" href="/ganeshsuryawanshi.github.io/index.html">Ganeshsuryawanshi.in</a><br><br>
-                <p>Feedback: <a href="mailto:ganeshsuryawanshi594@gmail.com">ganeshsuryawanshi594@gmail.com</a></p>
-            </div>
-            <!-- Copyright -->
-        </footer>
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                <!-- Github -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-dark" href="/ganeshsuryawanshi.github.io/index.html">Ganeshsuryawanshi.in</a><br><br>
+            <p>Feedback: <a href="mailto:ganeshsuryawanshi594@gmail.com">ganeshsuryawanshi594@gmail.com</a></p>
+        </div>
+        <!-- Copyright -->
     </footer>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
