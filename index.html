@@ -29,16 +29,15 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             color: black;
-            background-color: #93cffb;
+            background-color: #87d1fb;
         }
 
         .row {
             width: 100%;
-            height: 600px;
+            height: 700px;
         }
 
         .col {
-            
             text-align: center;
             justify-content: center;
             align-items: center;
@@ -50,17 +49,15 @@
 
         .heding {
             text-align: center;
+            align-items: center;
+            justify-content: center;
         }
 
         /******* This is skill css **********/
         .right-1 {
-            margin-top: 50px;
-        }
-
-        .right-2 {
-            /*margin= top,right,bottom,left*/
-            /*padding= top, right,bottom,left*/
-            margin: 50px;
+            display: grid;
+            align-items: center;
+            justify-content: center;
         }
 
         .div {
@@ -100,9 +97,11 @@
             border-radius: 40px 40px;
 
         }
-        .myimg:hover{
-            box-shadow: 0px 0px 1000px rgb(171, 0, 250);
+
+        .myimg:hover {
+            box-shadow: 0px 0px 1000px rgb(174, 0, 255);
         }
+
         .carousel-item {
             height: 600px;
         }
@@ -116,6 +115,19 @@
 
         .fab {
             font-size: 30px;
+        }
+
+        #cont1{
+            height: 600px;
+        }
+        #cont2{
+            height: 700px;
+            overflow-y:scroll;
+        }
+        #cont3{
+            height: 1000px;
+            width: 100%;
+            overflow:auto;
         }
     </style>
 </head>
@@ -139,7 +151,7 @@
 
                 <!-- Collapsible wrapper -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    
+
                     <!-- Left links -->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -190,7 +202,7 @@
     </header>
     <br>
 
-    <div class="container">
+    <div class="container" id="cont1">
         <div class="row">
             <div class="col">
                 <div class="left">
@@ -202,35 +214,47 @@
                     <h4><a href="http://dpcollege.in/">Dada patil college karjat</a></h4>
                 </div>
             </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <br>
+    <hr><br>  
+    <h3 class="heding" id="skill">Skill</h3>
+    <div class="container" id="cont2">
+        <div class="row">
             <div class="col">
-                <h3 class="heding">Skill</h3>
                 <div class="right-1">
                     <div class="div" data-progress="C++ 80" style="--progress: 300deg;">80%</div><br>
                     <div class="div" data-progress="PHP 90" style="--progress: 320deg;">90%</div><br>
                     <div class="div" data-progress="javascript 70" style="--progress: 280deg;">80%</div><br>
                     <div class="div" data-progress="HTML5 & CSS3 85" style="--progress: 310deg;">80%</div><br>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="right-1">
+                    <div class="div" data-progress="SQL 80" style="--progress: 300deg;">80%</div><br>
+                    <div class="div" data-progress="JAVA 80" style="--progress: 300deg;">80%</div><br>
+                    <div class="div" data-progress="PYTHON 80" style="--progress: 300deg;">80%</div><br>
+                    <div class="div" data-progress="DBMS 90" style="--progress: 350deg;">90%</div><br>
                 </div>
             </div>
 
         </div>
     </div>
     </div>
-    
-    <br>
-
     </div>
     <hr><br>
     <!--Certificate section-->
-    <div class="container">
+    <div class="container" id="cont3">
         <div class="row control-Crouse">
             <div class="col">
-                <h2>Certificate</h2>
-                <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere id <br>aliquam, qui amet, corrupti
-                sequi,
-                quae vitae obcaecati iste <br> recusandae temporibus debitis! Nostrum nam accusamus error </br>
-                temporibus
-                inventore nemo! Ducimus.
-                </p>
+                <h2>Certificate</h2><br>
+                <h4>Certificate of Wlcome training of new experts in chegg india pvt ltd.</h4>
+                <h4>Certificate of Data Science Foundations</h4>
+                <h4>Certificate of Introduction To Mysql</h4>
+                
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
