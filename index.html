@@ -28,8 +28,8 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            color: rgb(255, 255, 255);
-            background-color: #030506;
+            color: rgb(255, 252, 252);
+            background-color: #010717;
         }
 
         .row {
@@ -51,41 +51,10 @@
             text-align: center;
             align-items: center;
             justify-content: center;
-            font-size: 50px;
-            color: white;
+            font-size: 30px;
+            color: rgb(255, 225, 0);
         }
 
-        /******* This is skill css **********/
-        .right-1 {
-            display: grid;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .div {
-            display: flex;
-            margin-left: 110px;
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background: conic-gradient(rgb(13, 169, 177) var(--progress), rgb(255, 254, 254) 0deg);
-            font-size: 0;
-        }
-
-        .div::after {
-            content: attr(data-progress) '%';
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            width: 100%;
-            margin: 5px;
-            border-radius: 50%;
-            background: rgb(14, 14, 12);
-            font-size: 17px;
-            text-align: center;
-        }
-
-        /*******************/
         .myimg {
             height: 430px;
             width: 300px;
@@ -119,29 +88,49 @@
             font-size: 30px;
         }
 
-        #cont1{
+        #cont1 {
             height: 600px;
         }
-        #cont2{
+
+        #cont2 {
             height: 700px;
-            overflow-y:auto;
+            overflow-y: auto;
         }
-        #cont3{
-            height: 1000px;
+
+        #cont3 {
+            height: 900px;
             width: 100%;
-            overflow:auto;
+            overflow: auto;
+        }
+
+        #new1 {
+            height: 1050px;
+            width: 100%;
+        }
+
+        .skillheding {
+            text-align: left;
+        }
+
+        .txtheding {
+            font-size: 40px;
+        }
+
+        .AboutMe {
+            text-align: left;
+        }
+
+        .btn {
+            font-weight: bold;
+            font-size: 15px;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <a href="/ganeshsuryawanshi.github.io/index.html">
-            <h1 class="heding"><i>Ganesh Suryawanshi</i></h1>
-        </a>
-
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg- w-100">
             <!-- Container wrapper -->
             <div class="container-fluid">
                 <!-- Toggle button -->
@@ -150,10 +139,11 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-bars"></i>
                 </button>
-
+                <a href="/ganeshsuryawanshi.github.io/index.html">
+                    <h1 class="heding"><i>Ganesh Suryawanshi</i></h1>
+                </a>
                 <!-- Collapsible wrapper -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
                     <!-- Left links -->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -174,10 +164,10 @@
                 <!-- Collapsible wrapper -->
 
                 <!-- Right elements -->
-                <div class="d-flex align-items-center">
+                <!--<div class="d-flex align-items-center">
 
-                    <!-- Avatar -->
-                    <div class="dropdown">
+                    <!- Avatar -->
+                <!--<div class="dropdown">
                         <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
                             id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown"
                             aria-expanded="false">
@@ -196,56 +186,119 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div>--->
                 <!-- Right elements -->
             </div>
             <!-- Container wrapper -->
         </nav>
     </header>
     <br>
-
+    <!--front image and information section-->
     <div class="container" id="cont1">
         <div class="row">
             <div class="col">
-                <div class="left">
-                    <img class="myimg"
-                        src="https://ganeshsuryawansh.github.io/ganeshsuryawanshi.github.io/ganesh%20surya%20photo.jpg"
-                        position="left" alt="ganesh suryawanshi" /><br><br>
-                    <h1><i>Ganesh santosh suryawanshi</i></h1>
-                    <h4>BBA(COMPUTER APPLICATION )</h4>
-                    <h4><a href="http://dpcollege.in/">Dada patil college karjat</a></h4>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div>
+                                <img class="myimg" src="/ganeshsuryawanshi.github.io/ganesh surya photo.jpg"
+                                    alt="ganesh suryawanshi" /><br><br>
+                                <h1 class="heding"><i>Ganesh santosh suryawanshi</i></h1>
+                                <h4>BBA(COMPUTER APPLICATION )</h4>
+                                <h4 class="my-4"><a href="http://dpcollege.in/">Dada patil college karjat,Ahmednagar</a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <h1 class="txtheding">Hello!</h1><br>
+                            <h2 class="txtheding">I'am <i class="heding txtheding">Ganesh Suryawanshi</i></h2><br>
+                            <h4 class="txtheding">Full Stack Web devloper</h4><br>
+                            <h4 class="txtheding">based in Karjat</h4>
+                            <button class="btn btn-warning text-dark mx-3 my-5">HIRE ME</button>
+                            <button class="btn btn-warning text-dark mx-3 my-5">MY WORKS</button>
+
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
     </div>
     <br>
-    <br>  
-    
-    <div class="container" id="cont2"><h3 class="heding container mx-5" id="skill">Skills</h3>
+    <br>
+    <!--About me section-->
+    <div class="container" id="new1">
         <div class="row">
             <div class="col">
-                <div class="right-1">
-                    <div class="div" data-progress="C++ 80" style="--progress: 300deg;">80%</div><br>
-                    <div class="div" data-progress="PHP 90" style="--progress: 320deg;">90%</div><br>
-                    <div class="div" data-progress="javascript 70" style="--progress: 280deg;">80%</div><br>
-                    <div class="div" data-progress="HTML5 & CSS3 85" style="--progress: 310deg;">80%</div><br>
-
-                </div>
+                <br><br>
+                <img src="/ganeshsuryawanshi.github.io/ganesh surya photo.jpg" class="myimg" alt="ganesh suryawanshi">
             </div>
-            <div class="col">
-                <div class="right-1">
-                    <div class="div" data-progress="SQL 80" style="--progress: 300deg;">80%</div><br>
-                    <div class="div" data-progress="JAVA 80" style="--progress: 300deg;">80%</div><br>
-                    <div class="div" data-progress="PYTHON 80" style="--progress: 300deg;">80%</div><br>
-                    <div class="div" data-progress="DBMS 90" style="--progress: 350deg;">90%</div><br>
-                </div>
+            <div class="col AboutMe">
+                <br><br>
+                <h1>About Me</h1><br>
+                <h4>Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ganesh Suryawanshi</h4><br>
+                <h4>DateOB:&nbsp;&nbsp;Julay 30, 2002</h4><br>
+                <h4>Address:&nbsp;&nbsp;Karjat, Ahmednagar,Maharashtra</h4><br>
+                <h4>Zip code:&nbsp;&nbsp;414401</h4><br>
+                <h4>Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ganeshsuryawanshi594@gmail.com</h4><br>
+                <h4>Phone:&nbsp;&nbsp;&nbsp; +91 9309580827</h4>
+                <button class="btn btn-warning text-black my-3">DOWNLOADOD CV</button>
             </div>
-
         </div>
     </div>
-    </div>
+    <br><br>
+    <!--Skill section-->
+    <div class="container " id="cont2">
+        <div class="row">
+            <div class="col">
+                <h1 class="container heding">Skills</h1>
+                <h4 class="skillheding">C++ 80%</h4>
+                <div class="progress bg-warning" style="height: 20px;">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100">C++ 90%</div>
+                </div><br><br>
+
+                <h4 class="skillheding">PHP 90%</h4>
+                <div class="progress bg-warning" style="height: 20px;">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100">PHP 90%</div>
+                </div><br><br>
+
+                <h4 class="skillheding">Javascript 70%</h4>
+                <div class="progress bg-warning" style="height: 20px;">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70"
+                        aria-valuemin="0" aria-valuemax="100">Javascript 70%</div>
+                </div><br><br>
+
+                <h4 class="skillheding">HTML & CSS 90%</h4>
+                <div class="progress bg-warning" style="height: 20px;">
+                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100">HTML & CSS 90%</div>
+                </div><br><br>
+
+                <h4 class="skillheding">SQL 80%</h4>
+                <div class="progress bg-warning" style="height: 20px;">
+                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100">SQL 80%</div>
+                </div><br><br>
+            </div>
+        </div>
+
     </div>
     <br>
     <!--Certificate section-->
@@ -256,7 +309,7 @@
                 <h4>Certificate of Wlcome training of new experts in chegg india pvt ltd.</h4>
                 <h4>Certificate of Data Science Foundations</h4>
                 <h4>Certificate of Introduction To Mysql</h4>
-                
+
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
@@ -327,9 +380,8 @@
 
         </div>
     </div>
-    </div>
-    </div>
-    <footer class="text-center text-white" style="background-color: #000000;">
+    <!--Footer section-->
+    <footer class="text-center text-white w-100" style="background-color: #010717;">
         <!-- Grid container -->
         <div class="container pt-4">
             <!-- Section: Social media -->
@@ -356,10 +408,10 @@
         <!-- Grid container -->
 
         <!-- Copyright -->
-        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="text-center text-white p-3" style="background-color: 010717;">
             © 2022 Copyright:
             <a class="text-white" href="/ganeshsuryawanshi.github.io/index.html">Ganesh Suryawanshi</a><br><br>
-            <p>Feedback: <a href="mailto:ganeshsuryawanshi594@gmail.com" >ganeshsuryawanshi594@gmail.com</a></p>
+            <p>Feedback: <a href="mailto:ganeshsuryawanshi594@gmail.com">ganeshsuryawanshi594@gmail.com</a></p>
         </div>
     </footer>
 
