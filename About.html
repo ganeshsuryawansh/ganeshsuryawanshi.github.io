@@ -37,8 +37,8 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background-color: #000000;
-      color: white;
+      color: rgb(255, 190, 190);
+      background-color: #02113c;
     }
 
     /* Style the header */
@@ -46,13 +46,13 @@
       font-family: sans-serif;
       text-align: center;
       font-size: 35px;
-      color: white;
+      color: rgb(255, 173, 173);
     }
 
     .main {
       height: 1000px;
       width: 100%;
-      color: #ffffff;
+      color: #ffb5b5;
       text-align: center;
     }
 
@@ -90,8 +90,9 @@
       height: 400px;
       width: 100%;
     }
-    .col{
-      color:#e3ff0f;
+
+    .col {
+      color: #ffcca8;
     }
 
     .heding {
@@ -102,54 +103,56 @@
       color: rgb(255, 225, 0);
     }
 
-    .heding2 {
-      font-size: 30px;
-      color: rgb(255, 115, 0);
-      font-weight: 500;
-      line-height: 1.2;
+    
+
+    .heding {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            color: rgb(255, 225, 2);
+        }
+    .nav-link {
+      font-size: 20px;
     }
   </style>
 </head>
 
 <body>
   <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg- w-100">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <i class="heding">Ganesh Suryawanshi</i>
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-  </header>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <!-- Container wrapper -->
-    <div class="container-fluid">
-      <!-- Toggle button -->
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-      <a href="/ganeshsuryawanshi.github.io/index.html">
-        <h1 class="heding mx-3"><i>Ganesh Suryawanshi</i></h1>
-      </a>
-      <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- Left links -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="/ganeshsuryawanshi.github.io/index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="tel:9309580827">Callme</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/ganeshsuryawanshi.github.io/Resume.html">Resume</a>
-          </li>
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="/ganeshsuryawanshi.github.io/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tel:9309580827">Callme</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/ganeshsuryawanshi.github.io/resume.html">Resume</a>
+            </li>
+          </ul>
+          <!-- Left links -->
+        </div>
       </div>
-    </div>
-    <!-- Right elements -->
-    </div>
-    <!-- Container wrapper -->
-  </nav>
+    </nav>
+  </header>
 
   <div class="main container">
     <h1>
@@ -193,7 +196,7 @@
 
 
 
-  <footer class="text-center text-white" style="background-color: #000000;">
+  <footer class="text-center text-white" style="background-color: #020d2e;">
     <!-- Grid container -->
     <div class="container pt-4">
       <!-- Section: Social media -->
