@@ -29,7 +29,8 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             color: rgb(255, 252, 252);
-            background-color: #03011c;
+            background-color: #050132;
+            height: 2500px;
         }
 
         .row {
@@ -89,7 +90,7 @@
         }
 
         #cont1 {
-            height: 600px;
+            height: 800px;
         }
 
         #cont2 {
@@ -131,13 +132,13 @@
 
         .box {
             text-align: left;
-            background-color: #010c2b;
+            background-color: #061a4a;
             padding: 20px;
             cursor: pointer;
         }
 
         .box:hover {
-            box-shadow: 0px 0px 100px rgb(74, 1, 96);
+            box-shadow: 0px 0px 100px rgb(207, 51, 255);
         }
 
         .resume-section {
@@ -152,16 +153,36 @@
         .service-img {
             height: 200px;
             width: 220px;
+            cursor: pointer;
         }
 
-        
-        @media screen and (max-width: 600px) {
-            #cont5 {
-            height: 1800px;
+        .service-img:hover {
+            box-shadow: 0px 0px 100px rgb(207, 50, 255);
+        }
+
+        @media screen and (max-width: 400px) {
+            #cont4 {
+                height: 1300px;
             }
         }
 
-        
+        @media screen and (max-width: 900px) {
+            #cont5 {
+                height: 1800px;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            #cont5 {
+                height: 1800px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .front-info {
+                height: 1800px;
+            }
+        }
     </style>
 </head>
 
@@ -216,7 +237,7 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div>
+                            <div class="front-info">
                                 <img class="myimg" src="/ganeshsuryawanshi.github.io/new ganesh image intro.jpeg"
                                     alt="ganesh suryawanshi" /><br><br>
                                 <h1 class="heding"><i>Ganesh santosh suryawanshi</i></h1>
@@ -305,6 +326,7 @@
         </div>
 
     </div>
+    <br><br><br><br><br>
     <!--Skill section-->
     <div class="container " id="cont2">
         <div class="row">
@@ -424,43 +446,54 @@
         </div>
     </div>
     <br>
-    <hr>
+    <!---servises section-->
     <div class="container my-0" id="cont5">
-
         <div class="row">
             <h1 class="subheading heding">Services</h1>
             <div class="col mx-3 service-box">
-                <img class="service-img" src="/ganeshsuryawanshi.github.io/web desing.png" alt="">
+                <a href="#">
+                    <img class="service-img" src="/ganeshsuryawanshi.github.io/web desing.png" alt="">
+                </a>
                 <h3 class="subheading">WEB DESIGN</h3>
             </div>
             <div class="col mx-3 service-box">
-                <img class="service-img" src="/ganeshsuryawanshi.github.io/web-dev.png" alt="">
+                <a href="#">
+                    <img class="service-img" src="/ganeshsuryawanshi.github.io/web-dev.png" alt="">
+                </a>
                 <H3 class="subheading ">WEB DEVLOPMENT</H3>
             </div>
             <div class="col mx-3 service-box">
-                <img class="service-img" src="/ganeshsuryawanshi.github.io/app devlopment.png" alt="">
+                <a href="#">
+                    <img class="service-img" src="/ganeshsuryawanshi.github.io/app devlopment.png" alt="">
+                </a>
                 <H3 class="subheading ">
                     APP DEVLOPMENT
                 </H3>
             </div>
             <div class="col mx-3 service-box">
-                <img class="service-img" src="/ganeshsuryawanshi.github.io/digital marketing.png" alt="">
+                <a href="#">
+                    <img class="service-img" src="/ganeshsuryawanshi.github.io/digital marketing.png" alt="">
+                </a>
                 <H3 class="subheading ">DIGITAL MARKETING</H3>
             </div>
             <div class="col mx-3 service-box">
-                <img class="service-img" src="/ganeshsuryawanshi.github.io/seo.png" alt="">
+                <a href="#">
+                    <img class="service-img" src="/ganeshsuryawanshi.github.io/seo.png" alt="">
+                </a>
                 <H3 class="subheading">SEARCH ENGIN OPTIMIZATION</H3>
             </div>
             <div class="col mx-3 service-box">
-                <img class="service-img" src="/ganeshsuryawanshi.github.io/tech support.png" alt="">
+                <a href="#">
+                    <img class="service-img" src="/ganeshsuryawanshi.github.io/tech support.png" alt="">
+                </a>
                 <H3 class="subheading ">TECH SUPPORT</H3>
             </div>
         </div>
     </div>
 
-    <hr><br><br>
+    <br><br>
     <!--Footer section-->
-    <footer class="text-center text-white w-100 my-5" style="background-color:  #03011c;">
+    <footer class="text-center text-white w-100 my-5" style="background-color:   #050132;">
         <!-- Grid container -->
         <div class="container pt-4">
             <!-- Section: Social media -->
