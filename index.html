@@ -29,7 +29,7 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             color: rgb(255, 252, 252);
-            background-color: #02113c;
+            background-color: #03011c;
         }
 
         .row {
@@ -64,13 +64,13 @@
             top: 20px;
             left: 0px;*/
             cursor: pointer;
-            border: 1px solid rgb(0, 29, 68);
+            border: 1px solid rgb(1, 2, 33);
             border-radius: 10px 10px;
 
         }
 
         .myimg:hover {
-            box-shadow: 0px 0px 100px rgb(205, 4, 255);
+            box-shadow: 0px 0px 100px rgb(204, 0, 255);
         }
 
         .carousel-item {
@@ -104,7 +104,7 @@
         }
 
         #new1 {
-            height: 1050px;
+            height: 1000px;
             width: 100%;
         }
 
@@ -124,9 +124,44 @@
             font-weight: bold;
             font-size: 15px;
         }
-        .subheading{
-            color: rgb(255, 225, 2) ;
+
+        .subheading {
+            color: rgb(255, 225, 2);
         }
+
+        .box {
+            text-align: left;
+            background-color: #010c2b;
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        .box:hover {
+            box-shadow: 0px 0px 100px rgb(74, 1, 96);
+        }
+
+        .resume-section {
+            height: 1000px;
+        }
+
+        .service-box {
+            height: 300px;
+            padding: 30PX;
+        }
+
+        .service-img {
+            height: 200px;
+            width: 220px;
+        }
+
+        
+        @media screen and (max-width: 600px) {
+            #cont5 {
+            height: 1800px;
+            }
+        }
+
+        
     </style>
 </head>
 
@@ -215,7 +250,6 @@
         </div>
     </div>
     <br>
-    <br>
     <!--About me section-->
     <div class="container" id="new1">
         <div class="row">
@@ -230,13 +264,47 @@
                 <h4>DateOB:&nbsp;&nbsp;Julay 30, 2002</h4><br>
                 <h4>Address:&nbsp;&nbsp;Karjat, Ahmednagar,Maharashtra</h4><br>
                 <h4>Zip code:&nbsp;&nbsp;414401</h4><br>
-                <h4>Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ganeshsuryawanshi594@gmail.com</h4><br>
+                <h4>Email:&nbsp;ganeshsuryawanshi594@gmail.com</h4><br>
                 <h4>Phone:&nbsp;&nbsp;&nbsp; +91 9309580827</h4>
-                <button class="btn btn-warning text-black my-3">DOWNLOADOD CV</button>
+                <button href="/ganeshsuryawanshi.github.io/Ganesh_suryawanshi_Resume.pdf"
+                    class="btn btn-warning text-black my-3"><a
+                        href="/ganeshsuryawanshi.github.io/Ganesh_suryawanshi_Resume.pdf">DOWNLOAD CV</a></button>
             </div>
         </div>
     </div>
-    <br><br>
+    <br>
+    <!--Resume  section-->
+    <div class="container " id="cont4">
+        <div class="row resume-section">
+            <div class="col">
+                <h1 class="subheading my-5">Resume</h1>
+                <div class="box"><br>
+                    <h1 class="subheading">Full Stack Web Development</h1>
+                    <h4>2022</h4>
+                    <p>full stack devlopment contains front-end technologies are HTML CSS JS REACT-JS REDUX-JS etc.</p>
+                    <p>and back-end technologies are NODE-JS MONGODB NOSQL etc.</p>
+                </div><br>
+
+                <div class="box"><br>
+                    <h1 class="subheading">BBA(COMPUTER APPLICATION)</h2>
+                        <h4>LAST YEAR BBA(CA)-2023</h4>
+                        <p>BBA(COMPUTER APPLICATION) is formerly kmnown as BCA in <a href="http://www.dpcollege.in">DADA
+                                PATIL COLLEGE KARJAT AHMEDNAGER</a> affilited to Savitribai Phule Pune University pune.
+                            Public university in Pune, Maharashtra.
+                        </p>
+                </div><br>
+
+                <div class="box"><br>
+                    <h1 class="subheading">HSC & SSC</h2>
+                        <P>HSC science with 62% in Dada patil college karjat,ahmednagar.in year 2018-2020<br>MAHARASHTRA
+                            STATE BOARD</P>
+                        <P>SSC with 72% in new english school chande.bk karjat ahmednagar.in year 2018<br>MAHARASHTRA
+                            STATE BOARD</P>
+                </div><br>
+            </div>
+        </div>
+
+    </div>
     <!--Skill section-->
     <div class="container " id="cont2">
         <div class="row">
@@ -355,8 +423,44 @@
 
         </div>
     </div>
+    <br>
+    <hr>
+    <div class="container my-0" id="cont5">
+
+        <div class="row">
+            <h1 class="subheading heding">Services</h1>
+            <div class="col mx-3 service-box">
+                <img class="service-img" src="/ganeshsuryawanshi.github.io/web desing.png" alt="">
+                <h3 class="subheading">WEB DESIGN</h3>
+            </div>
+            <div class="col mx-3 service-box">
+                <img class="service-img" src="/ganeshsuryawanshi.github.io/web-dev.png" alt="">
+                <H3 class="subheading ">WEB DEVLOPMENT</H3>
+            </div>
+            <div class="col mx-3 service-box">
+                <img class="service-img" src="/ganeshsuryawanshi.github.io/app devlopment.png" alt="">
+                <H3 class="subheading ">
+                    APP DEVLOPMENT
+                </H3>
+            </div>
+            <div class="col mx-3 service-box">
+                <img class="service-img" src="/ganeshsuryawanshi.github.io/digital marketing.png" alt="">
+                <H3 class="subheading ">DIGITAL MARKETING</H3>
+            </div>
+            <div class="col mx-3 service-box">
+                <img class="service-img" src="/ganeshsuryawanshi.github.io/seo.png" alt="">
+                <H3 class="subheading">SEARCH ENGIN OPTIMIZATION</H3>
+            </div>
+            <div class="col mx-3 service-box">
+                <img class="service-img" src="/ganeshsuryawanshi.github.io/tech support.png" alt="">
+                <H3 class="subheading ">TECH SUPPORT</H3>
+            </div>
+        </div>
+    </div>
+
+    <hr><br><br>
     <!--Footer section-->
-    <footer class="text-center text-white w-100" style="background-color: #02113c;">
+    <footer class="text-center text-white w-100 my-5" style="background-color:  #03011c;">
         <!-- Grid container -->
         <div class="container pt-4">
             <!-- Section: Social media -->
