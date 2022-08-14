@@ -90,7 +90,7 @@
         }
 
         #cont1 {
-            height: 800px;
+            height: 700px;
         }
 
         #cont2 {
@@ -105,8 +105,14 @@
         }
 
         #new1 {
-            height: 1000px;
+            height: 600px;
             width: 100%;
+        }
+
+        @media screen and (max-width: 1000px) {
+            #new1 {
+                height: 1200px;
+            }
         }
 
         .skillheding {
@@ -160,6 +166,20 @@
             box-shadow: 0px 0px 100px rgb(207, 50, 255);
         }
 
+        .prj-img {
+            height: 20 0px;
+        }
+
+        .card {
+            height: 380px;
+            cursor: pointer;
+
+        }
+
+        .card:hover {
+            box-shadow: 0px 0px 100px rgb(207, 50, 255);
+        }
+
         @media screen and (max-width: 400px) {
             #cont4 {
                 height: 1300px;
@@ -175,6 +195,14 @@
         @media screen and (max-width: 400px) {
             #cont5 {
                 height: 1800px;
+            }
+        }
+
+
+
+        @media (min-width:200px) and (max-width:991px) {
+            #cont6 {
+                height: 1400px;
             }
         }
 
@@ -326,7 +354,7 @@
         </div>
 
     </div>
-    <br><br><br><br><br>
+    <br><br><br>
     <!--Skill section-->
     <div class="container " id="cont2">
         <div class="row">
@@ -365,7 +393,52 @@
         </div>
 
     </div>
+
+    <!--Skill section-->
+    <div class="container" id="cont6">
+        <div class="row">
+            <h1 class="subheading heding my-5">Our projects</h1>
+            <div class="col my-3">
+                <div class="card" style="width:18rem;">
+                    <img class="prj-img" src="/ganeshsuryawanshi.github.io/portfolio-img2.png" class="card-img-top"
+                        alt="Portfolio website">
+                    <div class="card-body">
+                        <h5 class="card-title text-black">Portfolio website</h5>
+                        <p class="card-text text-black"> representation of work we have created my projects, as well as
+                            my skills and experiences.</p>
+                        <a href="https://ganeshsuryawansh.github.io/ganeshsuryawanshi.github.io/index.html"
+                            class="btn btn-primary my-5">Go To Projets</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col my-3">
+                <div class="card" style="width:18rem;">
+                    <img class="prj-img"
+                        src="/ganeshsuryawanshi.github.io/online-shopping-system-1561229754-4966428.jpg"
+                        class="card-img-top" alt="Online shopping system">
+                    <div class="card-body">
+                        <h5 class="card-title text-black">Online shopping system</h5>
+                        <p class="card-text text-black"> Online shopping is an application of the internet.</p>
+                        <a href="#" class="btn btn-primary my-3">Go To Projets</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col my-3">
+                <div class="card" style="width:18rem;">
+                    <img class="prj-img" src="/ganeshsuryawanshi.github.io/Food-dilivery-system.png"
+                        class="card-img-top" alt="Food delivery system">
+                    <div class="card-body">
+                        <h5 class="card-title text-black">Food delivery system</h5>
+                        <p class="card-text text-black">online food ordering and delivery system centralizes all
+                            pick-up, delivery & dine in orders.</p>
+                        <a href="#" class="btn btn-primary">Go To Projets</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <br>
+
     <!--Certificate section-->
     <div class="container" id="cont3">
         <div class="row control-Crouse">
@@ -446,6 +519,7 @@
         </div>
     </div>
     <br>
+
     <!---servises section-->
     <div class="container my-0" id="cont5">
         <div class="row">
@@ -490,8 +564,8 @@
             </div>
         </div>
     </div>
-
     <br><br>
+
     <!--Footer section-->
     <footer class="text-center text-white w-100 my-5" style="background-color:   #050132;">
         <!-- Grid container -->
