@@ -67,11 +67,37 @@
             cursor: pointer;
             border: 1px solid rgb(1, 2, 33);
             border-radius: 10px 10px;
+            transition-duration: 1s;
+            transition-timing-function: step-start;
+            transition-delay: 0s;
 
         }
 
         .myimg:hover {
+            height: 440px;
+            width: 310px;
             box-shadow: 0px 0px 100px rgb(204, 0, 255);
+        }
+
+        #abt-img:hover {
+            height: 440px;
+            width: 310px;
+            box-shadow: 0px 0px 100px rgb(204, 0, 255);
+        }
+
+        @media (min-width:200px) and (max-width:991px) {
+            .myimg {
+                height: 430px;
+                width: 300px;
+                margin-top: 25px;
+                flex-shrink: 15;
+                /*position: relative;
+            top: 20px;
+            left: 0px;*/
+                cursor: pointer;
+                border: 1px solid rgb(1, 2, 33);
+                border-radius: 10px 10px;
+            }
         }
 
         .carousel-item {
@@ -170,7 +196,7 @@
             height: 20 0px;
         }
 
-        .card {
+        .project-card {
             height: 380px;
             cursor: pointer;
 
@@ -209,6 +235,105 @@
         @media screen and (max-width: 500px) {
             .front-info {
                 height: 1800px;
+            }
+        }
+
+        .blog-card {
+            height: 400px;
+            cursor: pointer;
+        }
+
+        @media (min-width:200px) and (max-width:991px) {
+            #cont7 {
+                height: 1400px;
+            }
+        }
+
+        /**********video css*****************/
+        #cont8 {
+            width: 100%;
+            height: 500px;
+            position: relative;
+            top: 0px;
+            left: 0px;
+            overflow: hidden;
+        }
+        @media (min-width:200px) and (max-width:1134px) {
+            .hire-img {
+                height: 300px;
+                width: 100%;
+                position: relative;
+                top: 0px;
+                left: 0px;
+                z-index: 1;
+            }
+            #cont8 {
+                width: 100%;
+                height: 350px;
+                position: relative;
+                top: 0px;
+                left: 0px;
+                overflow: hidden;
+            }
+            video {
+                height: 800px;
+                width: 100%;
+                position: relative;
+                top: 0px;
+                left: 0px;
+            }
+        }
+        video {
+            height: 800px;
+            width: 100%;
+        }
+
+        @media (min-width:200px) and (max-width:1134px) {
+            .hire-txt {
+                position: absolute;
+                top: 130px;
+                left: 61px;
+                ;
+                z-index: 2;
+                color: rgb(251, 230, 0);
+                text-align: center;
+                font-size: 20px;
+                font-weight: bolder;
+            }
+
+            .hire-btn {
+                position: absolute;
+                top: 170px;
+                left: 60px;
+                height: 35px;
+                width: 100px;
+                ;
+                font-size: 17px;
+                color: #000;
+                padding: 10px 10px 10px 10px;
+
+            }
+        }
+
+        @media (min-width:459px) and (max-width:1562px) {
+            .hire-txt {
+                position: absolute;
+                top: 200px;
+                left: 450px;
+                z-index: 2;
+                color: rgb(254, 254, 9);
+                text-align: center;
+                font-size: 70px;
+                font-weight: bolder;
+            }
+
+            .hire-btn {
+                position: absolute;
+                top: 300px;
+                left: 500px;
+                height: 50px;
+                font-size: 23px;
+                color: #000;
             }
         }
     </style>
@@ -304,7 +429,8 @@
         <div class="row">
             <div class="col">
                 <br><br>
-                <img src="/ganeshsuryawanshi.github.io/ganesh surya photo.jpg" class="myimg" alt="ganesh suryawanshi">
+                <img src="/ganeshsuryawanshi.github.io/ganesh surya photo.jpg" class="myimg" id="abt-img"
+                    alt="ganesh suryawanshi">
             </div>
             <div class="col AboutMe">
                 <br><br>
@@ -313,7 +439,6 @@
                 <h4>DateOB:&nbsp;&nbsp;Julay 30, 2002</h4><br>
                 <h4>Address:&nbsp;&nbsp;Karjat, Ahmednagar,Maharashtra</h4><br>
                 <h4>Zip code:&nbsp;&nbsp;414401</h4><br>
-                <h4>Email:&nbsp;ganeshsuryawanshi594@gmail.com</h4><br>
                 <h4>Phone:&nbsp;&nbsp;&nbsp; +91 9309580827</h4>
                 <button href="/ganeshsuryawanshi.github.io/Ganesh_suryawanshi_Resume.pdf"
                     class="btn btn-warning text-black my-3"><a
@@ -394,12 +519,12 @@
 
     </div>
 
-    <!--Skill section-->
+    <!--projects section-->
     <div class="container" id="cont6">
         <div class="row">
             <h1 class="subheading heding my-5">Our projects</h1>
             <div class="col my-3">
-                <div class="card" style="width:18rem;">
+                <div class="card project-card" style="width:18rem;">
                     <img class="prj-img" src="/ganeshsuryawanshi.github.io/portfolio-img2.png" class="card-img-top"
                         alt="Portfolio website">
                     <div class="card-body">
@@ -412,7 +537,7 @@
                 </div>
             </div>
             <div class="col my-3">
-                <div class="card" style="width:18rem;">
+                <div class="card project-card" style="width:18rem;">
                     <img class="prj-img"
                         src="/ganeshsuryawanshi.github.io/online-shopping-system-1561229754-4966428.jpg"
                         class="card-img-top" alt="Online shopping system">
@@ -424,7 +549,7 @@
                 </div>
             </div>
             <div class="col my-3">
-                <div class="card" style="width:18rem;">
+                <div class="card project-card" style="width:18rem;">
                     <img class="prj-img" src="/ganeshsuryawanshi.github.io/Food-dilivery-system.png"
                         class="card-img-top" alt="Food delivery system">
                     <div class="card-body">
@@ -519,6 +644,49 @@
         </div>
     </div>
     <br>
+    <!--Blog section-->
+    <div class="container" id="cont7">
+        <div class="row">
+            <h1 class="subheading heding">Our Blog</h1>
+            <div class="col my-3">
+                <div class="card blog-card" style="width:20rem;">
+                    <img src="/ganeshsuryawanshi.github.io/blog-image-1.jpg" class="card-img-top blog-img"
+                        style="width:20rem;" alt="How to Become a Full Stack Developer">
+                    <div class="card-body">
+                        <h5 class="card-title text-black">How to Become a Full Stack Developer </h5>
+                        <p class="card-text text-black">To become a full stack developer, you need to familiarize
+                            yourself with two basic web development concepts: the front end and the back end.</p>
+                        <a href="https://ganeshsuryawansh.github.io/ganeshsuryawanshi.github.io/index.html"
+                            class="btn btn-primary">Read more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col my-3">
+                <div class="card blog-card" style="width:20rem;">
+                    <img src="/ganeshsuryawanshi.github.io/data-science.img.png" class="card-img-top blog-img"
+                        alt="Data science">
+                    <div class="card-body">
+                        <h5 class="card-title text-black">Data science</h5>
+                        <p class="card-text text-black">Data science is study that deals with vast volumes of data using
+                            modern tools and techniques to find unseen patterns, and make business decisions</p>
+                        <a href="#" class="btn btn-primary my-3">Read more...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col my-3">
+                <div class="card blog-card" style="width:20rem;">
+                    <img src="/ganeshsuryawanshi.github.io/artificial-intilegence (2).png" class="card-img-top blog-img"
+                        alt="Artificial intelligence">
+                    <div class="card-body">
+                        <h5 class="card-title text-black">Artificial intelligence</h5>
+                        <p class="card-text text-black">Artificial intelligence is the simulation of human intelligence
+                            processes by machines, especially computer systems.</p>
+                        <a href="#" class="btn btn-primary">Read more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!---servises section-->
     <div class="container my-0" id="cont5">
@@ -566,6 +734,17 @@
     </div>
     <br><br>
 
+    <!---hire me section-->
+    <div class="hire-me" id="cont8">
+        <!---   
+        <img class="hire-img" src="/ganeshsuryawanshi.github.io/sunset-mountain-river-nature-dark-bw-forest.jpg" alt="">
+        -->
+        <video class="hire-img" autoplay loop muted plays-inline>
+            <source src="/ganeshsuryawanshi.github.io/video.mp4" type="video/mp4">
+        </video>
+        <h1 class="hire-txt">I'm Available for Hiring</h1><br>
+        <button class="btn btn-warning hire-txt hire-btn">HIRE MI</button>
+    </div>
     <!--Footer section-->
     <footer class="text-center text-white w-100 my-5" style="background-color:   #050132;">
         <!-- Grid container -->
