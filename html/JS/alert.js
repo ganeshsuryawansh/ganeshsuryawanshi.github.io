@@ -7,7 +7,7 @@ function showalert(){
     if(name===""){
         alert("Please Enter Your Name And Email");
     } 
-    else{
-        alert("Dear "+name+" Your Message is Succsfully Send To Ganesh Suryawanshi! Welcome This Portal");
+    else{ 
+        alert("Hello,"+name+" Your Message is Succsfully Send To Ganesh Suryawanshi! Welcome This Portal");
     }
 }
