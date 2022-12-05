@@ -1,5 +1,5 @@
 
-console.log("hii i am js");
+//console.log("hii i am js");
 
 function showalert(){
     console.log("i am inside alert function");
